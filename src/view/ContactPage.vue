@@ -48,7 +48,7 @@
 
     <div class="mt-8">
       <a
-        href="https://wa.me/628XXXXXX"
+        href="https://wa.me/62895411252300"
         target="_blank"
         class="bg-green-500 text-white px-6 py-3 rounded-md font-bold hover:bg-green-400"
       >
