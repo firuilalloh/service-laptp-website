@@ -3,7 +3,7 @@
     <div
       class="bg-blue-500 text-white p-5 flex justify-between shadow-md items-center fixed w-full top-0 z-50"
     >
-      <h1 class="text-xl font-bold md:text-2xl">FixLap</h1>
+      <h1 class="font-bold text-lg sm:text-xl md:text-2xl">FixLap</h1>
       <button @click="toggleMenu" class="md:hidden text-white text-2xl">
         ☰
       </button>

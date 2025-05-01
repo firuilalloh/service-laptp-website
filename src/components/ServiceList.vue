@@ -14,7 +14,7 @@
       >
         <!-- Nama layanan + harga di kiri, tombol di kanan atas -->
         <div class="flex justify-between items-center">
-          <p class="text-2xl font-bold text-blue-500">{{ service.name }}</p>
+          <p class="text-xl font-bold text-blue-500">{{ service.name }}</p>
           <button
             v-if="activeService !== index"
             @click="orderService(service.whatsappLink)"
@@ -54,7 +54,7 @@ export default {
           description:
             "Meningkatkan performa laptop dengan RAM dan SSD baru untuk kecepatan maksimal.",
           whatsappLink:
-            "https://wa.me/628xxxxxx?text=Halo,%20saya%20tertarik%20dengan%20upgrade%20RAM%20%26%20SSD",
+            "https://wa.me/62895411252300?text=Halo,%20saya%20tertarik%20dengan%20upgrade%20RAM%20%26%20SSD",
         },
         {
           name: "Perbaikan Keyboard & Touchpad",
@@ -62,7 +62,7 @@ export default {
           description:
             "Mengatasi masalah keyboard atau touchpad yang tidak responsif atau rusak.",
           whatsappLink:
-            "https://wa.me/628xxxxxx?text=Halo,%20saya%20butuh%20perbaikan%20keyboard%20%26%20touchpad",
+            "https://wa.me/62895411252300?text=Halo,%20saya%20butuh%20perbaikan%20keyboard%20%26%20touchpad",
         },
         {
           name: "Instalasi Software & OS",
@@ -70,7 +70,7 @@ export default {
           description:
             "Pemasangan sistem operasi, aplikasi produktivitas, dan software lainnya.",
           whatsappLink:
-            "https://wa.me/628xxxxxx?text=Halo,%20saya%20ingin%20instalasi%20software%20%26%20OS",
+            "https://wa.me/62895411252300?text=Halo,%20saya%20ingin%20instalasi%20software%20%26%20OS",
         },
       ],
     };

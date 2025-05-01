@@ -9,7 +9,7 @@
       <div
         class="relative bg-white bg-opacity-80 p-6 md:p-8 rounded-lg shadow-lg max-w-md md:max-w-xl lg:max-w-2xl"
       >
-        <h1 class="text-4xl font-bold text-blue-500">
+        <h1 class="text-blue-500 font-bold text-2xl sm:text-3xl md:text-4xl">
           FixLap - Spesialis Upgrade & Optimasi Laptop
         </h1>
         <p class="mt-4 text-lg text-gray-700">
