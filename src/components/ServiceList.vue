@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full px-6 py-12">
+  <div class="w-full px-4 py-12">
     <h2 class="text-4xl font-bold text-blue-500 text-center">Layanan FixLap</h2>
     <p class="text-gray-700 mt-4 text-center">
       Pilih layanan yang Anda butuhkan dan lihat detailnya.
@@ -9,7 +9,7 @@
       <div
         v-for="(service, index) in services"
         :key="index"
-        class="bg-white p-8 rounded-lg shadow-md transition-all duration-500 w-full cursor-pointer hover:shadow-lg"
+        class="bg-white p-3 md:p-6 rounded-lg shadow-md transition-all duration-500 w-full cursor-pointer hover:shadow-lg"
         @click="toggleService(index)"
       >
         <!-- Nama layanan + harga di kiri, tombol di kanan atas -->
