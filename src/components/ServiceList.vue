@@ -20,7 +20,7 @@
           <button
             v-if="activeService !== index"
             @click="orderService(service.whatsappLink)"
-            class="bg-yellow-400 px-5 py-2 rounded-md text-black font-bold hover:bg-yellow-300"
+            class="bg-yellow-400 px-5 py-2 rounded-md text-black font-bold hover:bg-yellow-300 text-sm md:text-xl"
           >
             Pesan
           </button>
