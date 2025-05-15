@@ -14,7 +14,7 @@
       >
         <!-- Nama layanan + harga di kiri, tombol di kanan atas -->
         <div class="flex justify-between items-center">
-          <p class="text-xl font-bold text-blue-500">
+          <p class="text-sm font-bold md:text-2xl text-blue-500">
             {{ service.name }} - {{ service.price }}
           </p>
           <button
