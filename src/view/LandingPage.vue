@@ -46,9 +46,9 @@
             </p>
           </div>
           <div class="bg-white p-6 rounded-lg shadow-md w-64">
-            <h3 class="text-xl font-bold text-blue-500">Perbaikan Minor</h3>
+            <h3 class="text-xl font-bold text-blue-500">Perbaikan Hardware</h3>
             <p class="text-gray-600 mt-2">
-              Fix masalah keyboard, mousepad, dan komponen kecil lainnya.
+              Fix masalah keyboard, mousepad dan Hardware lainnya.
             </p>
           </div>
           <div class="bg-white p-6 rounded-lg shadow-md w-64">
@@ -98,20 +98,20 @@
         <div class="flex flex-wrap justify-center gap-6 mt-6">
           <div class="bg-white p-6 rounded-lg shadow-md w-64">
             <p class="text-gray-600 italic">
-              "FixLap membantu saya upgrade SSD, laptop makin ngebut!"
+              "mantap, pengerjaan cepat. sat set. RAM langsung work, dan yang paling penting sangat bisa dipercaya👍👍"
             </p>
             <h3 class="text-lg font-bold text-blue-500 mt-2">
-              - Andi, Yogyakarta
+              - Dimas, Yogyakarta
             </h3>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow-md w-64">
+          <!-- <div class="bg-white p-6 rounded-lg shadow-md w-64">
             <p class="text-gray-600 italic">
               "Pelayanan ramah dan profesional, keyboard saya jadi nyaman lagi."
             </p>
             <h3 class="text-lg font-bold text-blue-500 mt-2">
               - Rina, Jakarta
             </h3>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

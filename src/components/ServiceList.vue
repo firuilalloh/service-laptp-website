@@ -14,7 +14,9 @@
       >
         <!-- Nama layanan + harga di kiri, tombol di kanan atas -->
         <div class="flex justify-between items-center">
-          <p class="text-xl font-bold text-blue-500">{{ service.name }}</p>
+          <p class="text-xl font-bold text-blue-500">
+            {{ service.name }} - {{ service.price }}
+          </p>
           <button
             v-if="activeService !== index"
             @click="orderService(service.whatsappLink)"
@@ -29,6 +31,9 @@
           v-if="activeService === index"
           class="mt-6 text-gray-700 transition-all duration-500"
         >
+          <p v-if="service.parts" class="mt-4 font-bold text-blue-500">
+            ( {{ service.parts }} )
+          </p>
           <p>{{ service.description }}</p>
           <button
             @click="orderService(service.whatsappLink)"
@@ -50,7 +55,9 @@ export default {
       services: [
         {
           name: "Upgrade RAM & SSD",
-          price: "Rp 500.000",
+          price: "Rp 50.000",
+          parts:
+            "RAM & SSD tergantung dari pilihan customer / bisa di diskusikan",
           description:
             "Meningkatkan performa laptop dengan RAM dan SSD baru untuk kecepatan maksimal.",
           whatsappLink:
@@ -58,19 +65,66 @@ export default {
         },
         {
           name: "Perbaikan Keyboard & Touchpad",
-          price: "Rp 200.000",
+          price: "Rp 50.000",
+          parts:
+            "Keyboard & Touchpad tergantung dari pilihan customer / bisa di diskusikan",
           description:
             "Mengatasi masalah keyboard atau touchpad yang tidak responsif atau rusak.",
           whatsappLink:
             "https://wa.me/62895411252300?text=Halo,%20saya%20butuh%20perbaikan%20keyboard%20%26%20touchpad",
         },
         {
-          name: "Instalasi Software & OS",
-          price: "Rp 150.000",
+          name: "Instalasi OS ( Operating System )",
+          price: "Rp 50.000",
+          parts: "Operating System tergantung dari pilihan customer",
           description:
-            "Pemasangan sistem operasi, aplikasi produktivitas, dan software lainnya.",
+            "Pemasangan Operating System baru untuk laptop Anda windows 10, Windows 11 dan linux.",
           whatsappLink:
             "https://wa.me/62895411252300?text=Halo,%20saya%20ingin%20instalasi%20software%20%26%20OS",
+        },
+        {
+          name: "Inner cleaning laptop",
+          price: "Rp 20.000",
+          description:
+            "Membersihkan debu dan kotoran dari laptop untuk menjaga performa dan suhu.",
+          whatsappLink:
+            "https://wa.me/62895411252300?text=Halo,%20saya%20ingin%20membersihkan%20laptop",
+        },
+        {
+          name: "Replace thermal paste",
+          price: "Rp 50.000",
+          parts:
+            "Thermal paste tergantung dari pilihan customer / bisa di diskusikan",
+          description:
+            "Mengganti thermal paste untuk mendinginkan laptop dan meningkatkan kinerja.",
+          whatsappLink:
+            "https://wa.me/62895411252300?text=Halo,%20saya%20ingin%20repaste%20thermal%20paste",
+        },
+        {
+          name: "Driver Installation",
+          price: "Rp 5.000 / driver",
+          description:
+            "Instalasi driver untuk perangkat keras laptop agar berfungsi dengan baik.",
+          whatsappLink:
+            "https://wa.me/62895411252300?text=Halo,%20saya%20ingin%20instalasi%20driver",
+        },
+        {
+          name: "Software Installation",
+          price: "Rp 10.000 / software",
+          description:
+            "Instalasi software untuk meningkatkan fungsionalitas laptop Anda.",
+          whatsappLink:
+            "https://wa.me/62895411252300?text=Halo,%20saya%20ingin%20instalasi%20software",
+        },
+        {
+          name: "Instalasi OS & Software Bawaan",
+          price: "Rp 70.000",
+          parts:
+            "Windows/Linux + Microsoft Office, PDF Reader, Browser, Media Player, dll   .",
+          description:
+            "Pemasangan Operating System baru (Windows/Linux) lengkap dengan software bawaan seperti Microsoft Office, PDF Reader, Browser, Media Player, dan aplikasi penting lainnya.",
+          whatsappLink:
+            "https://wa.me/62895411252300?text=Halo,%20saya%20ingin%20instalasi%20OS%20dan%20software%20bawaan",
         },
       ],
     };
