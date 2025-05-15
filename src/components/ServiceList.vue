@@ -15,7 +15,7 @@
         <!-- Nama layanan + harga di kiri, tombol di kanan atas -->
         <div class="flex justify-between items-center">
           <p class="text-sm font-bold md:text-2xl text-blue-500">
-            {{ service.name }} - {{ service.price }}
+            {{ service.name }}
           </p>
           <button
             v-if="activeService !== index"
@@ -31,7 +31,8 @@
           v-if="activeService === index"
           class="mt-6 text-gray-700 transition-all duration-500"
         >
-          <p v-if="service.parts" class="mt-4 font-bold text-blue-500">
+        <p class=" font-bold text-2xl text-blue-500 ">{{ service.price }}</p>
+          <p v-if="service.parts" class="font-bold text-blue-500">
             ( {{ service.parts }} )
           </p>
           <p>{{ service.description }}</p>
