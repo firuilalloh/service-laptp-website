@@ -9,9 +9,9 @@
       <div
         class="relative bg-white bg-opacity-80 p-6 md:p-8 rounded-lg shadow-lg max-w-md md:max-w-xl lg:max-w-2xl"
       >
-        <h1 class="text-blue-500 font-bold text-2xl sm:text-3xl md:text-4xl">
+        <p class="text-blue-500 font-bold text-4xl md:text-6xl">
           FixLap - Spesialis Upgrade & Optimasi Laptop
-        </h1>
+        </p>
         <p class="mt-4 text-lg text-gray-700">
           Kami membantu meningkatkan performa laptop Anda dengan solusi cepat
           dan efektif.
@@ -104,14 +104,6 @@
               - Dimas, Yogyakarta
             </h3>
           </div>
-          <!-- <div class="bg-white p-6 rounded-lg shadow-md w-64">
-            <p class="text-gray-600 italic">
-              "Pelayanan ramah dan profesional, keyboard saya jadi nyaman lagi."
-            </p>
-            <h3 class="text-lg font-bold text-blue-500 mt-2">
-              - Rina, Jakarta
-            </h3>
-          </div> -->
         </div>
       </div>
     </div>

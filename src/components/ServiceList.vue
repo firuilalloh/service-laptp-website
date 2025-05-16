@@ -12,7 +12,7 @@
         class="bg-white p-3 md:p-6 rounded-lg shadow-md transition-all duration-500 w-full cursor-pointer hover:shadow-lg"
         @click="toggleService(index)"
       >
-        <!-- Nama layanan + harga di kiri, tombol di kanan atas -->
+        <!-- Nama layanan, tombol di kanan atas -->
         <div class="flex justify-between items-center">
           <p class="text-sm font-bold md:text-2xl text-blue-500">
             {{ service.name }}
@@ -38,7 +38,7 @@
           <p>{{ service.description }}</p>
           <button
             @click="orderService(service.whatsappLink)"
-            class="mt-4 bg-yellow-400 px-6 py-3 rounded-md text-black font-bold hover:bg-yellow-300 float-right"
+            class="mt-4 bg-yellow-400 px-6 py-3 rounded-md text-black font-bold hover:bg-yellow-300 float-right text-sm md:text-xl"
           >
             Pesan Sekarang
           </button>

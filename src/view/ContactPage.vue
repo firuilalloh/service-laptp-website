@@ -60,6 +60,7 @@
 
 <script>
 import FormLabel from "../components/FormLabel.vue";
+import emailjs from "emailjs-com";
 
 export default {
   components: { FormLabel },
@@ -71,8 +72,30 @@ export default {
     };
   },
   methods: {
-    sendMessage() {
-      alert(`Pesan terkirim dari ${this.name}: ${this.message}`);
+    async sendMessage() {
+      const templateParams = {
+        title: "Pesan dari customer",
+        name: this.name,
+        email: this.email,
+        message: this.message,
+      };
+
+      try {
+        await emailjs.send(
+          "service_7wkz22m",
+          "template_nw1x2vu",
+          templateParams,
+          "3YFkOcCLxKb9b9JNO"
+        );
+        alert("Pesan berhasil dikirim!");
+        this.title = "Hubungi Kami";
+        this.name = "";
+        this.email = "";
+        this.message = "";
+      } catch (error) {
+        console.error("Error sending message:", error);
+        alert("Gagal mengirim pesan. Silakan coba lagi.");
+      }
     },
   },
 };

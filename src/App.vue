@@ -15,7 +15,7 @@
       <div
         ref="menu"
         :class="menuOpen ? 'block' : 'hidden'"
-        class="md:flex md:space-x-6 absolute md:static bg-blue-500 text-white text-xl w-full md:w-auto left-0 top-18 md:top-0 text-center md:text-left"
+        class="md:flex md:space-x-6 absolute md:static bg-blue-500 text-white text-md md:text-xl w-full md:w-auto left-0 top-18 md:top-0 text-center md:text-left"
       >
         <router-link
           to="/"

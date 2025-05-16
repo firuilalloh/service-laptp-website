@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-4xl mx-auto py-12 text-center">
+  <div class="max-w-4xl mx-auto py-12 px-5 text-center">
     <h2 class="text-3xl font-bold text-blue-500">Apa Kata Pelanggan?</h2>
 
     <div
@@ -16,7 +16,7 @@
       <div
         v-for="(testimonial, index) in testimonials"
         :key="index"
-        class="bg-white p-6 rounded-lg shadow-md w-64"
+        class="bg-white p-6 rounded-lg shadow-md w-full"
       >
         <p class="text-gray-600 italic">"{{ testimonial.feedback }}"</p>
         <h3 class="text-lg font-bold text-blue-500 mt-2">
@@ -31,7 +31,12 @@
 export default {
   data() {
     return {
-      testimonials: [], // Awalnya kosong, nanti bisa ditambahkan dari pelanggan asli.
+      testimonials: [
+        {
+          name: "Dimas, Yogyakarta",
+          feedback: "mantap, pengerjaan cepat. sat set. RAM langsung work, dan yang paling penting sangat bisa dipercaya👍👍",
+        },
+      ],
     };
   },
 };
